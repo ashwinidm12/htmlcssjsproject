@@ -15,7 +15,8 @@ Key features:
 - Built with CSS Grid/Flexbox and modern UI styling
 
 ## Live Preview
-Run a local server and open `http://localhost:8000`.
+- Local preview: `http://localhost:8000`
+- Deployed site: https://ashwinidm12.github.io/htmlcssjsproject/
 
 ## Project Structure
 
