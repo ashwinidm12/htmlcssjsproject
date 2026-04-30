@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Shop | Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-fade">
+    <header class="site-header">
+        <div class="brand"><a href="index.html">Minimal Shop</a></div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="cart.html" class="nav-link">Cart <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <main class="product-page">
+        <div id="loading" class="loading-state">
+            <div class="spinner"></div>
+            <p>Loading product details...</p>
+        </div>
+        <div id="error-message" class="error-message hidden"></div>
+        <section id="product-detail" class="product-detail hidden">
+            <div class="product-image-panel">
+                <img id="product-image" src="" alt="Product image" class="product-image">
+            </div>
+            <div class="product-info-panel">
+                <span class="eyebrow" id="product-category"></span>
+                <h1 id="product-title"></h1>
+                <div class="product-meta">
+                    <span class="product-price" id="product-price"></span>
+                    <span class="product-rating" id="product-rating"></span>
+                </div>
+                <p class="product-description" id="product-description"></p>
+                <div class="product-stats">
+                    <div>
+                        <span>Stock</span>
+                        <strong id="product-stock"></strong>
+                    </div>
+                    <div>
+                        <span>Brand</span>
+                        <strong id="product-brand"></strong>
+                    </div>
+                    <div>
+                        <span>Discount</span>
+                        <strong id="product-discount"></strong>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button id="add-to-cart-btn" class="button button-primary">Add to Cart</button>
+                    <a href="cart.html" class="button button-secondary">View Cart</a>
+                </div>
+                <p id="success-message" class="success-message hidden"></p>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="js/product.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Shop | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-fade">
+    <header class="site-header">
+        <div class="brand">
+            <a href="index.html">Minimal Shop</a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="cart.html" class="nav-link">Cart <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-panel">
+            <div class="hero-copy">
+                <span class="eyebrow">Modern essentials</span>
+                <h1>Shop clean, stylish product picks.</h1>
+                <p>Explore curated items built for everyday moments. Smooth animations, soft shadows, and a crisp shopping experience.</p>
+                <a href="#products" class="button button-primary">Browse products</a>
+            </div>
+            <div class="hero-card">
+                <div class="product-highlight">
+                    <span class="highlight-label">Featured</span>
+                    <h2>Minimal design, maximum comfort.</h2>
+                    <p>Fast shipping, effortless checkout, and quality product details.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Discover</p>
+                    <h2>Top picks from the shop</h2>
+                </div>
+                <p>Products load dynamically from the DummyJSON API with polished interactions and responsive layout.</p>
+            </div>
+
+            <div id="loading" class="loading-state">
+                <div class="spinner"></div>
+                <p>Loading products...</p>
+            </div>
+
+            <div id="error-message" class="error-message hidden"></div>
+            <div id="product-grid" class="product-grid"></div>
+        </section>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
